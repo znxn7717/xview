@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.w3-bar {background-color: #00000000 !important; display:block !important;}
+.w3-button {background-color: #00000000 !important; display:block !important;}
+.w3-red {background-color: #2f8ece48 !important;}
+.w3-padding-large {padding: 12px 6px !important;}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" style="float: left;">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#BTC" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=014" style="width: 20px;"></img></a>
+    <a href="#ETH" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#XRP" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/xrp-xrp-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#SOL" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#XLM" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/stellar-xlm-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#TRX" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/tron-trx-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#EOS" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/eos-eos-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#LINK" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/chainlink-link-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#BTT" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/bittorrent-btt-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#DOT" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#ADA" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#CHZ" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cdn.bitpin.ir/media/market/currency/1628592425.png" style="width: 20px;"></a>
+    <a href="#DOGE" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#SHIB" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#FTM" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/fantom-ftm-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#XTZ" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/tezos-xtz-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#BNB" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#ETC" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cryptologos.cc/logos/ethereum-classic-etc-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#KISHU" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="https://cdn.bitpin.ir/media/market/currency/1627379021.png" style="width: 20px;"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#BTC" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=014"  style="width: 20px;"></img></a>
+    <a href="#ETH" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#XRP" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/xrp-xrp-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#SOL" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#XLM" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/stellar-xlm-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#TRX" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/tron-trx-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#EOS" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/eos-eos-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#LINK" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/chainlink-link-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#BTT" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/bittorrent-btt-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#DOT" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#ADA" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#CHZ" class="w3-bar-item w3-button w3-padding-large"><img src="https://cdn.bitpin.ir/media/market/currency/1628592425.png" style="width: 20px;"></a>
+    <a href="#DOGE" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#SHIB" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logosshiba-inu-shib-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#FTM" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/fantom-ftm-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#XTZ" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/tezos-xtz-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#BNB" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#ETC" class="w3-bar-item w3-button w3-padding-large"><img src="https://cryptologos.cc/logos/ethereum-classic-etc-logo.png?v=014" style="width: 20px;"></a>
+    <a href="#KISHU" class="w3-bar-item w3-button w3-padding-large"><img src="https://cdn.bitpin.ir/media/market/currency/1627379021.png" style="width: 20px;"></a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color: #f7921a;">
+  <h1 id="BTC" class="w3-margin w3-jumbo">BTC</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_d8806" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">BTCUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITSTAMP:BTCUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_d8806"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Second Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#617dea;">
+  <h1 id="ETH" class="w3-margin w3-jumbo">ETH</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_ca465" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETHUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">ETHUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITSTAMP:ETHUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_ca465"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Third Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#23282e;">
+  <h1 id="XRP" class="w3-margin w3-jumbo">XRP</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_3b871" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/XRPUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">XRPUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITSTAMP:XRPUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_3b871"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Fourth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#67f9a2;">
+  <h1 id="SOL" class="w3-margin w3-jumbo">SOL</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_50516" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/SOLUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">SOLUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "COINBASE:SOLUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_50516"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Fifth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#000000;">
+  <h1 id="XLM" class="w3-margin w3-jumbo">XLM</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_c2a70" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/XLMUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">XLMUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITSTAMP:XLMUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_c2a70"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Sixth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#ef0026;">
+  <h1 id="TRX" class="w3-margin w3-jumbo">TRX</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_1814c" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/TRXUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">TRXUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:TRXUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_1814c"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Seventh Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#272727;">
+  <h1 id="EOS" class="w3-margin w3-jumbo">EOS</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_43a13" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EOSUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">EOSUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:EOSUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_43a13"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Eighth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#2959da;">
+  <h1 id="LINK" class="w3-margin w3-jumbo">LINK</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_e16e9" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/LINKUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">LINKUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITSTAMP:LINKUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_e16e9"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Ninth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#000000;">
+  <h1 id="BTT" class="w3-margin w3-jumbo">BTT</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_4f6de" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTTUSD/?exchange=BITTREX" rel="noopener" target="_blank"><span class="blue-text">BTTUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITTREX:BTTUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_4f6de"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Tenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#e60079;">
+  <h1 id="DOT" class="w3-margin w3-jumbo">DOT</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_ad23e" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/DOTUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">DOTUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:DOTUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_ad23e"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Eleventh Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#0d1e2f;">
+  <h1 id="ADA" class="w3-margin w3-jumbo">ADA</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_0c5dc" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ADAUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">ADAUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:ADAUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_0c5dc"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Twelveth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#cd0124;">
+  <h1 id="CHZ" class="w3-margin w3-jumbo">CHZ</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_5ed29" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CHZUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">CHZUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BITSTAMP:CHZUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_5ed29"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Thirteenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#c3a735;">
+  <h1 id="DOGE" class="w3-margin w3-jumbo">DOGE</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_ec994" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/DOGEUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">DOGEUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:DOGEUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_ec994"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- fourteenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#f00500;">
+  <h1 id="SHIB" class="w3-margin w3-jumbo">SHIB</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_ab9e4" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/SHIBUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">SHIBUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "COINBASE:SHIBUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_ab9e4"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Fifteenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#13b5ec;">
+  <h1 id="FTM" class="w3-margin w3-jumbo">FTM</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_76f6c" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/FTMUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">FTMUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:FTMUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_76f6c"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Sixteenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#a5e000;">
+  <h1 id="XTZ" class="w3-margin w3-jumbo">XTZ</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_c9394" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/XTZUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">XTZUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "COINBASE:XTZUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_c9394"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Seventeenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#f3b92e;">
+  <h1 id="BNB" class="w3-margin w3-jumbo">BNB</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_bc065" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BNBUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BNBUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:BNBUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_bc065"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Eighteenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#318231;">
+  <h1 id="ETC" class="w3-margin w3-jumbo">ETC</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_44e33" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETCUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">ETCUSD Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:ETCUSD",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_44e33"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<!-- Nineteenth Grid -->
+<center class="w3-container w3-red w3-center1" style="padding:50px 16px 16px 16px;">
+  <div style="background-color:#0ccbff;">
+  <h1 id="KISHU" class="w3-margin w3-jumbo">KISHU</h1>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_77e59" style="height: 35vw;"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/KISHUUSDT/?exchange=UNISWAP" rel="noopener" target="_blank"><span class="blue-text">KISHUUSDT Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "UNISWAP:KISHUUSDT",
+  "interval": "15",
+  "timezone": "Asia/Tehran",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "studies": [
+    "IchimokuCloud@tv-basicstudies"
+  ],
+  "container_id": "tradingview_77e59"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</center>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Via CryptoCurrency Making The World A Better Place.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
